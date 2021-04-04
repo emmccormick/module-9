@@ -32,6 +32,20 @@ const questions = [
         message: "Please include usage information:"
     },
     {
+        type: "list",
+        name: "license",
+        message: "Chose the appropriate license for this project: ",
+        choices: [
+            "Apache",
+            "Academic",
+            "GNU",
+            "ISC",
+            "MIT",
+            "Mozilla",
+            "Open"
+        ]
+    },
+    {
         type: "input",
         name: "contributing",
         message: "Please include contribution guidelines:"
@@ -40,6 +54,16 @@ const questions = [
         type: "input",
         name: "tests",
         message: "Please include test instructions:"
+    },
+    {
+        type: "input",
+        name: "github",
+        message: "What is your GitHub username?"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is your email address?"
     }
 
 ];
